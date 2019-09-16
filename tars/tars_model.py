@@ -52,11 +52,7 @@ for name, child in model_conv.named_children():
 
 """
 
-<<<<<<< HEAD
 def all_pretrained_models(n_class, use_gpu=False, freeze_layers=False, freeze_initial_layers=True, name="resnet18", pretrained=True):
-=======
-def all_pretrained_models(n_class, use_gpu=True, freeze_layers=False, freeze_initial_layers=False, name="resnet18", pretrained=True):
->>>>>>> ed1fc54c427f3fa52b5fa58bd013018d6ad40eff
     if pretrained:
         weights = "imagenet"
     else:
