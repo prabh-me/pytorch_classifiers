@@ -25,7 +25,11 @@ parser.add_argument('-ep', '--epochs', default=100, type=int)
 parser.add_argument('-b', '--batch_size', default=64, type=int)
 parser.add_argument('-is', '--input_shape', default=224, type=int)
 parser.add_argument('-sl', '--save_loc', default="models/" )
+<<<<<<< HEAD
 parser.add_argument("-g", '--use_gpu', default=False, action='store_false', help='Bool type gpu')
+=======
+parser.add_argument("-g", '--use_gpu', default=True, action='store_false', help='Bool type gpu')
+>>>>>>> ed1fc54c427f3fa52b5fa58bd013018d6ad40eff
 parser.add_argument("-p", '--use_parallel', default=True, action='store_false', help='Bool type to use_parallel')
 parser.add_argument("-mx", '--mixup', default=True, action='store_true' ,help='Use mixup data augementation')
 parser.add_argument("-mxal", '--mixup_alpha', default=0.1, type = float, help='Alpha to be used in mixup agumentation')
