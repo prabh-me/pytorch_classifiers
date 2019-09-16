@@ -72,7 +72,7 @@ def train_model(model, dataloaders, dataset_sizes, criterion, optimizer, schedul
                     optimizer.step()
 
                 # statistics
-                running_loss += loss.data[0]
+                running_loss += loss.data
                 running_corrects += torch.sum(preds == labels.data)
 
             epoch_loss = running_loss / dataset_sizes[phase]
